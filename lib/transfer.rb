@@ -24,9 +24,10 @@ class Transfer
         if count > 0
           return
         end
+        count += 1
     receiver.balance = @amount + receiver.balance
     sender.balance = sender.balance - @amount
     @status = "complete"
-    count += 1
+
   end
 end
