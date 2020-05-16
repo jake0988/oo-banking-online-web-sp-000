@@ -22,7 +22,7 @@ class Transfer
         # binding.pry
     receiver.balance = @amount + receiver.balance
     sender.balance = sender.balance - @amount
-    @amount == 0
+    @amount = 0
     @status = "complete"
 
 
