@@ -10,7 +10,11 @@ class Transfer
   end
 
   def valid?
-    binding.pry
+    if sender.valid? && reciever.valid?
+      return true
+    else
+      false
+    end
 
   end
 
