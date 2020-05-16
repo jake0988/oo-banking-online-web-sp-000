@@ -9,4 +9,8 @@ attr_reader :name, :balance, :status
   def deposit(money)
     @balance = @balance + money
   end
+
+  def display_balance
+    @balance
+  end
 end
