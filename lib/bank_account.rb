@@ -1,7 +1,8 @@
 
 require 'pry'
 class BankAccount
-attr_reader :name, :balance, :status
+attr_accessor :balance
+attr_reader :name, :status
   def initialize(name)
     @name = name
     @balance = 1000
@@ -13,7 +14,6 @@ attr_reader :name, :balance, :status
   end
 
   def display_balance
-    self.balance = @balance
     "Your balance is $#{@balance}."
   end
 
