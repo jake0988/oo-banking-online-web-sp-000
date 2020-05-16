@@ -23,4 +23,5 @@ attr_reader :name, :balance, :status
 
   def close_account
     self = []
+  end
 end
