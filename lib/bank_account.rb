@@ -6,6 +6,7 @@ attr_reader :name, :balance, :status
     @name = name
     @balance = 1000
     @status = "open"
+    binding.pry
   end
 
   def deposit(money)
@@ -17,7 +18,6 @@ attr_reader :name, :balance, :status
   end
 
   def valid?
-    binding.pry
     if @status = "open" && @balance > 0
       true
     end
