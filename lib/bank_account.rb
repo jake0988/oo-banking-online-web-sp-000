@@ -1,5 +1,5 @@
 
-binding 'pry'
+require 'pry'
 class BankAccount
 attr_reader :name, :balance, :status
   def initialize(name)
