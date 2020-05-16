@@ -37,5 +37,6 @@ class Transfer
     # binding.pry
     sender.balance = @other + sender.balance
     receiver.balance = receiver.balance - @other
+    @status = "complete"
   end
 end
