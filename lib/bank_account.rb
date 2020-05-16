@@ -10,11 +10,11 @@ attr_reader :name, :balance, :status
 
   def deposit(money)
     @balance = @balance + money
-    binding.pry
   end
 
   def display_balance
     "Your balance is $#{@balance}."
+    binding.pry
   end
 
   def valid?
