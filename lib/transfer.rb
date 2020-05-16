@@ -30,6 +30,6 @@ class Transfer
     @amount = 0
     @status = "complete"
 
- puts sender.balance
+
   end
 end
