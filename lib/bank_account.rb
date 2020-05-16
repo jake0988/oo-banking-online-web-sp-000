@@ -17,6 +17,7 @@ attr_reader :name, :balance, :status
   end
 
   def valid?
+    
     if @status = "open"
       true
     end
