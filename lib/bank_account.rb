@@ -22,6 +22,6 @@ attr_reader :name, :balance, :status
   end
 
   def close_account
-    @name = []
+    @name = nil
   end
 end
