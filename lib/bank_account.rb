@@ -13,11 +13,12 @@ attr_reader :name, :balance, :status
   end
 
   def display_balance
+    self.balance = @balance
     "Your balance is $#{@balance}."
   end
 
   def valid?
-    
+
     if @status = "open"
       true
     end
