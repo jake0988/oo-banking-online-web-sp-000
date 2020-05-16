@@ -6,11 +6,11 @@ attr_reader :name, :balance, :status
     @name = name
     @balance = 1000
     @status = "open"
-    binding.pry
   end
 
   def deposit(money)
     @balance = @balance + money
+    binding.pry
   end
 
   def display_balance
