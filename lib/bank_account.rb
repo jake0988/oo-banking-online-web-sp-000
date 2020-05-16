@@ -14,11 +14,10 @@ attr_reader :name, :balance, :status
 
   def display_balance
     "Your balance is $#{@balance}."
-    binding.pry
   end
 
   def valid?
-    if @status = "open" && @balance > 0
+    if @status = "open"
       true
     end
     false
