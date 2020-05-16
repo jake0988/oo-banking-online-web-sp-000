@@ -9,7 +9,7 @@ class Transfer
     @amount = amount
   end
 
-  def valid?(sender, reciever)
+  def valid?
     binding.pry
 
   end
