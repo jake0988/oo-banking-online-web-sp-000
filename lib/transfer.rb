@@ -22,7 +22,7 @@ class Transfer
 
         if sender.balance < @amount || !sender.valid? || !receiver.valid?
 
-           "Transaction rejected. Please check your account balance."
+           return "Transaction rejected. Please check your account balance."
 
         end
         sender.balance = sender.balance - @amount
