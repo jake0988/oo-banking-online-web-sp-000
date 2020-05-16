@@ -6,6 +6,7 @@ attr_reader :name, :balance, :status
     @status = "open"
   end
 
-  def deposit
+  def deposit(money)
+    @balance = @balance + money
   end
 end
