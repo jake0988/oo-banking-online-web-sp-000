@@ -26,6 +26,7 @@ class Transfer
            return
         end
         sender.balance = sender.balance - @amount
+        binding.pry
         if sender.balance < 0
           binding.pry
          "Transaction rejected. Please check your account balance."
