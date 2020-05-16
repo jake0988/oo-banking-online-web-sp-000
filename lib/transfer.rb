@@ -19,7 +19,7 @@ class Transfer
   end
 
   def execute_transaction
-        binding.pry
+        # binding.pry
     receiver.balance = @amount + receiver.balance
     sender.balance = sender.balance - @amount
   end
