@@ -1,3 +1,5 @@
+
+binding 'pry'
 class BankAccount
 attr_reader :name, :balance, :status
   def initialize(name)
@@ -15,6 +17,7 @@ attr_reader :name, :balance, :status
   end
 
   def valid?
+    binding.pry
     if @status = "open" && @balance > 0
       true
     end
