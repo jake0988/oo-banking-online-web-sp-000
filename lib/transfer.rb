@@ -20,14 +20,11 @@ class Transfer
 
   def execute_transaction
         # binding.pry
-        count = 0
-        if count > 0
-          return
-        end
-        count += 1
     receiver.balance = @amount + receiver.balance
     sender.balance = sender.balance - @amount
+    @amount == 0
     @status = "complete"
+
 
   end
 end
