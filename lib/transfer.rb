@@ -19,7 +19,7 @@ class Transfer
   end
 
   def execute_transaction
-   puts sender.balance
+
         if @amount > sender.balance
           binding.pry
            "Transaction rejected. Please check your account balance."
@@ -30,6 +30,6 @@ class Transfer
     @amount = 0
     @status = "complete"
 
-
+ puts sender.balance
   end
 end
